@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  margin: 0 auto;
+  width: 30%;
+}
+body {
+  background: aqua;
+}
+img {
+  max-width: 200px;
+  max-height: 200px;
+}

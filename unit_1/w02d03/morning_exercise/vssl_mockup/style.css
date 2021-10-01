@@ -1,0 +1,17 @@
+body {
+  margin: 0 auto;
+}
+.name {
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+nav {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+.nav-links {
+  padding: 0 50px;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head.ejs %>
+</head>
+<body>
+    <h1>Create a Kazoo</h1>
+    <form action="/kazoo" method="POST">
+        <input type="text" name="name" placeholder="name"/>
+        <input type="number" name="price"/>
+        <input type="number" name="qty"/>
+
+        <!-- Submit -->
+        <input type="submit" value="Create Kazoo"/>
+    </form>
+</body>
+</html>

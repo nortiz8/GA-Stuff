@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head.ejs %>
+</head>
+<body>
+    <h1>Edit <%= foundKazoo.name %></h1>
+
+    <form action="/kazoo/<%= foundKazoo.id %>?_method=PUT" method="POST">
+        <input type="text" name="name" value="<%= foundKazoo.name %>"/>
+        <input type="number" name="price" value="<%= foundKazoo.price %>"/>
+        <input type="number" name="qty" value="<%= foundKazoo.qty %>"/>
+
+        <!-- Submit -->
+        <input type="submit" value="Edit Kazoo"/>
+    </form>
+</body>
+</html>

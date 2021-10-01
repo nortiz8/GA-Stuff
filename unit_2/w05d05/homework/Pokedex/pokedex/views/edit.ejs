@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+    />
+  </head>
+  <body>
+    <h1>Edit Pokémon</h1>
+    <form action="/pokedex/<%=index%>?_method=PUT" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" value="<%=pokemon.name%>" />
+      <label for="img">Image:</label>
+      <input type="text" name="img" id="img" value="<%=pokemon.img%>" />
+      <label for="type">Type:</label>
+      <input type="text" name="type" id="type" value="<%=pokemon.type%>" />
+      <label for="hp">HP:</label>
+      <input type="text" name="hp" id="hp" value="<%=pokemon.stats.hp%>" />
+      <label for="attack">Attack:</label>
+      <input
+        type="text"
+        name="attack"
+        id="attack"
+        value="<%=pokemon.stats.attack%>"
+      />
+      <label for="defense">Defense:</label>
+      <input
+        type="text"
+        name="defense"
+        id="defense"
+        value="<%=pokemon.stats.defense%>"
+      />
+      <label for="speed">Speed:</label>
+      <input
+        type="text"
+        name="speed"
+        id="speed"
+        value="<%=pokemon.stats.speed%>"
+      />
+      <input type="submit" value="Edit Pokémon" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FRUITS</title>
+  </head>
+  <body>
+    <h1>Look At All These FRUITS</h1>
+    <ul>
+      <%for(item of fruits){ %>
+      <li><a href="/fruits/${item}"><%=item.name%></a></li>
+      <%}%>
+    </ul>
+  </body>
+</html>

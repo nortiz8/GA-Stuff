@@ -1,0 +1,18 @@
+.square {
+  display: inline-block;
+  background: ivory;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  flex-shrink: 100;
+}
+.pink {
+  background: pink;
+}
+#container {
+  max-height: 500px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Biscoff Bakery</title>
+    <link rel="stylesheet" href="/css/skeleton.css" />
+  </head>
+  <body>
+    <h1>Index of Baked Goods</h1>
+
+    <ul>
+      <% bakedGoods.forEach((cookie, index) => { %>
+      <li><a href="/bakedgoods/<%=index%>"> <%= cookie.name %></a></li>
+      <% }) %>
+    </ul>
+    <h3><a href="/bakedgoods/new">Add to menu</a></h3>
+  </body>
+</html>

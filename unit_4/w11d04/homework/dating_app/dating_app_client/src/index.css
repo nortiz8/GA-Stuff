@@ -1,0 +1,44 @@
+body {
+  margin: 0 auto;
+  background-color: plum;
+}
+header {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left {
+  height: 100%;
+  width: 24%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main {
+  height: 800px;
+  width: 48%;
+  border: 2px solid blue;
+}
+.right {
+  height: 100%;
+  width: 24%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dater {
+  width: 95%;
+  height: 33%;
+  border: 1px solid deeppink;
+  background-color: palevioletred;
+  color: ghostwhite;
+  text-align: center;
+}
+footer {
+  text-align: center;
+}

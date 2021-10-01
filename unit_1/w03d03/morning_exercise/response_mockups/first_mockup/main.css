@@ -1,0 +1,41 @@
+body {
+  background: hsla(146, 62%, 95%, 1);
+}
+.a {
+  width: auto;
+  height: 200px;
+  background: green;
+}
+.b {
+  width: auto;
+  height: 400px;
+  background: yellow;
+}
+.c {
+  width: auto;
+  height: 200px;
+  background: deeppink;
+}
+@media (min-width: 600px) {
+  body {
+    background: black;
+  }
+  .a {
+    width: auto;
+    height: 400px;
+    background: blue;
+  }
+  .container {
+    display: flex;
+  }
+  .b {
+    width: 75%;
+    height: 600px;
+    background: orange;
+  }
+  .c {
+    width: 25%;
+    height: 600px;
+    background: skyblue;
+  }
+}

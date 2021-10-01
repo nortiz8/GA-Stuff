@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Index of Scientists</title>
+  </head>
+  <body>
+    <h1>Index of Scientists</h1>
+    <a href="/index/new">Hire New Scientist</a>
+    <ul>
+      <% scientists.forEach((scientist, index) => { %>
+      <li>
+        <a href="/index/<%=index%>"><%= scientist.name %></a>
+        <form action="/index/<%= index %>?_method=DELETE" method="POST">
+          <input type="submit" value="DELETE" />
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+    <form action="/index?_method=DELETE" method="POST">
+      <input type="submit" value="OHNO! SPACE PIRATES?!? DELETE THE DATA" />
+    </form>
+  </body>
+</html>

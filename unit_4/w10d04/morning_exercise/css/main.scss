@@ -1,0 +1,37 @@
+$pinkColor: rgba(255, 49, 148, 0.938);
+
+.button-things {
+  border: 1px solid lighten($pinkColor, 20%);
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+h1 {
+  color: $pinkColor;
+}
+.calc-body {
+  background: cyan;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.display {
+  background: darken($pinkColor, 18%);
+  height: 90px;
+  width: 375px;
+}
+.button {
+  @extend .button-things;
+  height: 80px;
+  width: 80px;
+  background: $pinkColor;
+}

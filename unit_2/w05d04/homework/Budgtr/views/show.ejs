@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Budget</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%=item.name%></h1>
+      <button><a href="/budgets">Back</a></button>
+      <div>
+        <p>date <%=item.date%></p>
+        <p>name: <%=item.name%></p>
+        <p>from: <%=item.from%></p>
+        <p>amount:<%=item.amount%></p>
+        <p>tags: <%=item.tags%></p>
+      </div>
+      <h4><a href="/budgets">Back to Index</a></h4>
+    </div>
+  </body>
+</html>
+=======
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Show One Expense Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+
+<body>
+  <div class="container">
+    <button>
+      <a href="/expenses">Go Back to Index</a>
+    </button>
+    <h1>
+      <%= currentExpense.name %>
+    </h1>
+
+    <table>
+      <tr>
+        <th>Date</th>
+        <td>
+          <%= currentExpense.date %>
+        </td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>
+          <%= currentExpense.name %>
+        </td>
+      </tr>
+      <tr>
+        <th>Amount</th>
+        <td>
+          <%= currentExpense.amount %>
+        </td>
+      </tr>
+      <tr>
+        <th>From</th>
+        <td>
+          <%= currentExpense.from %>
+        </td>
+      </tr>
+      <tr>
+        <th>Tags</th>
+        <td>
+          <%= currentExpense.tags %>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</body>
+
+</html>
+>>>>>>> 4209c0a512f99eae74b1492c3b35a7b69eeb51aa

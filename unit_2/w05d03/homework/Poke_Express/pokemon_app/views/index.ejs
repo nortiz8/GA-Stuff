@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokémon</title>
+    <style type="text/css">
+      body {
+        color: red;
+        background-color: goldenrod;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>See All The Pokémon!</h1>
+    <ul>
+      <% for(pokemon of data) {%>
+      <li>
+        <a href="/pokemon/<%=data.indexOf(pokemon)%>""
+          ><%=pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)%></a
+        >
+      </li>
+      <%}%>
+    </ul>
+  </body>
+</html>

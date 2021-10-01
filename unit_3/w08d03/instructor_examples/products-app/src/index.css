@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-products, .shopping-cart {
+  flex: 1;
+}
+
+.product, .cart-item {
+  background: cornsilk;
+  margin: 20px;
+}
+
+.cart-item {
+  background: cornflowerblue;
+}

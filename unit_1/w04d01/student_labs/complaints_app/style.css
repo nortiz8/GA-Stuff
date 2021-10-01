@@ -1,0 +1,17 @@
+body {
+  background: grey;
+}
+.complaint-divs {
+  height: auto;
+  width: 500px;
+  background: palevioletred;
+}
+.inner-div {
+  background: green;
+  height: auto;
+  width: 500px;
+  display: none;
+}
+.police-button {
+  background: blue;
+}

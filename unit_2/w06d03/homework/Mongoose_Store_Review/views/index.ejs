@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head.ejs %>
+</head>
+<body>
+    <h1>This is the Kazoo Index</h1>
+    <a href="/kazoo/new"><button>New Page</button></a>
+
+    <ul>
+        <% allKazoo.forEach((kazoo) => { %>
+            <li>
+                <a href="/kazoo/<%= kazoo.id %>"><%= kazoo.name %> - $<%= kazoo.price %></a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Budget</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+  </head>
+  <% let currentAmount = 0 %> <% budget.forEach((item) => {currentAmount +=
+  parseInt(item.amount)}) %> <% if (currentAmount < 0) { %>
+  <style>
+    body {
+      background: darkred;
+      color: white;
+    }
+  </style>
+  <%} %> <%if(currentAmount > 1000) { %>
+  <style>
+    body {
+      background: mediumaquamarine;
+    }
+  </style>
+  <%}%>
+  <body>
+    <div class="container">
+      <h1>Budgtr ALL</h1>
+      <h3>Current Bank Account: <span><%=currentAmount%></span></h3>
+      <table>
+        <% budget.forEach((item, index) => { %>
+        <tr>
+          <td><%=item.date%></td>
+          <td><a href="/budgets/<%=index%>"><%=item.name%></a></td>
+          <td><%=item.amount%></td>
+        </tr>
+        <% }) %>
+      </table>
+
+      <h4><a href="/budgets/new">Add New Item</a></h4>
+    </div>
+  </body>
+</html>
+=======
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kenny's Amazing Budgtr App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+
+<body>
+  <!-- <h1>This is index page.</h1> -->
+  <div class="container">
+    <h1>Hello Adult Life</h1>
+
+    <table>
+
+      <tr>
+        <th>Budgtr App</th>
+      </tr>
+
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Amount</th>
+      </tr>
+
+      <!-- Embedd JS to dynamically render a new table row for each expense using a forEach loop-->
+      <% budgetKey.forEach((expense, index) => { %>
+
+        <tr>
+          <td>
+            <%= expense.date %>
+          </td>
+          <td>
+            <a href="/expenses/<%= index %>">
+              <%= expense.name %>
+            </a>
+          </td>
+          <td>
+            <%= expense.amount %>
+          </td>
+        </tr>
+
+      <% }) %>
+
+    </table>
+
+    <button>
+      <!-- The HREF is directing back to '/new' because you created app.get('/new') in your server.js to show new.ejs -->
+      <a href="/new">Create New Expense</a>
+    </button>
+  </div>
+</body>
+  
+</html>
+>>>>>>> 4209c0a512f99eae74b1492c3b35a7b69eeb51aa

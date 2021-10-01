@@ -1,0 +1,28 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+}
+div {
+  border: 1px solid black;
+  text-align: center;
+}
+#output {
+  height: 100px;
+  width: 400px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.num-button {
+  background: green;
+}
+.num-button,
+.math-button,
+.equal-button {
+  height: 100px;
+  width: 100px;
+}

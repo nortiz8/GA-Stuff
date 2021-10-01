@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%=product.name%></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <p><a href="/store/<%=product.id%>/edit">Edit Item</a></p>
+    <div class="container">
+      <div class="item">
+        <h1><%=product.name%></h1>
+        <img src="<%=product.img%>" />
+        <p><%=product.description%></p>
+        <h4>Price: $<%=product.price%></h4>
+        <% if(product.qty > 0) { %>
+        <h5>Only <%=product.qty%> left!</h5>
+        <form action="/store/buy/<%=product.id%>?_method=PUT"" method="POST">
+            <input type="number" name="buy">
+        <button>BUY NOW</button>
+        </form>
+        <% } else { %>
+        <h5>OUT OF STOCK :(</h5>
+        <% } %>
+        <form action="/store/<%=product.id%>?_method=DELETE" method="POST">
+          <input type="submit" value="Remove Item From Store" />
+        </form>
+      </div>
+    </div>
+    <h5><a href="/store">Back to Store</a></h5>
+  </body>
+</html>

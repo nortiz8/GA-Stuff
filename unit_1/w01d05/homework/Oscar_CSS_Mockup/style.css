@@ -1,0 +1,13 @@
+#main-blue {
+  background: blue;
+  padding: 100px;
+  color: white;
+}
+.thirds {
+  border: 1px solid grey;
+  display: inline-block;
+  max-width: 30%;
+}
+/* h1 {
+  color: white;
+} */

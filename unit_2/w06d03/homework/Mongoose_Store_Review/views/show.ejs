@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head.ejs %>
+</head>
+<body>
+    <h1><%= foundKazoo.name %></h1>
+    <h3>Price: <%= foundKazoo.price %></h3>
+    
+    <%if (foundKazoo.qty > 0) {%>
+        <h3>Qty: <%= foundKazoo.qty %></h3>
+    <% } else { %> 
+        <h1 style="color:red">OUT OF STOCK</h1>
+    <% } %>
+
+    <!-- Edit -->
+    <a href="/kazoo/<%= foundKazoo.id %>/edit"><button>Edit</button></a>
+
+
+    <!-- Buy -->
+    <form action="/kazoo/<%= foundKazoo.id %>/buy?_method=PUT" method="POST">
+        <!-- Submit -->
+        <input type="submit" value="Buy Kazoo"/>
+    </form>
+    
+</body>
+</html>

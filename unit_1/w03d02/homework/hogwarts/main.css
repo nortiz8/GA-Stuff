@@ -1,0 +1,30 @@
+body {
+  background-image: url('hufflepuff.png');
+  text-align: center;
+  font-family: sans-serif;
+}
+main {
+  background: rgba(236, 185, 91, 0.8);
+  margin: 10px 250px;
+}
+.owl {
+  font-family: fantasy;
+}
+.secret {
+  opacity: 0.5;
+}
+li {
+  list-style: none;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cabbage {
+  color: chartreuse;
+}

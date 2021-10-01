@@ -1,0 +1,42 @@
+body {
+  background-image: url('img/rainbow-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin: 0 100px;
+}
+nav {
+  text-align: center;
+}
+.nav {
+  padding: 0 20px;
+}
+main {
+  background: white;
+  padding: 20px;
+  margin: 0 100px;
+}
+#big-pup {
+  max-width: 49%;
+  border-radius: 50%;
+}
+#OMG {
+  background: lightskyblue;
+  text-align: center;
+}
+li {
+  padding: 5px 0;
+}
+#little-pup {
+  max-width: 50px;
+}
+footer {
+  background: white;
+  margin: 0 100px;
+  text-align: center;
+}
